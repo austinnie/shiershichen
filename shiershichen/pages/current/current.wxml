@@ -1,0 +1,42 @@
+<view class="container">
+  <view class="header">
+    <text class="title">当前时间预兆查询</text>
+  </view>
+  
+  <view class="time-info">
+    <text>当前时间: {{currentTime}}</text>
+    <text>农历日期: {{lunarDate}}</text>
+    <text>年柱: {{yearGanzhi}}</text>
+    <text>月柱: {{monthGanzhi}}</text>
+    <text>日柱: {{dayGanzhi}}</text>
+    <text>时柱: {{hourGanzhi}}</text>
+    <text>时辰: {{hourName}}</text>
+  </view>
+  
+  <picker mode="selector" range="{{omenTypes}}" range-key="name" bindchange="selectOmenType">
+    <view class="picker">选择预兆类型: {{selectedOmenType}}</view>
+  </picker>
+  
+  <view wx:if="{{showSidePicker}}">
+    <picker mode="selector" range="{{['左', '右']}}" bindchange="selectSide">
+      <view class="picker">选择侧别: {{selectedSide}}</view>
+    </picker>
+  </view>
+  
+  <view wx:if="{{showGenderPicker}}">
+    <picker mode="selector" range="{{['男', '女']}}" bindchange="selectGender">
+      <view class="picker">选择性别: {{selectedGender}}</view>
+    </picker>
+  </view>
+  
+  <button bindtap="queryOmen" type="primary">查询预兆</button>
+  
+  <view wx:if="{{omenResult}}" class="result">
+    <text class="result-title">预兆解释</text>
+    <text class="result-content">{{omenResult}}</text>
+  </view>
+  
+  <navigator url="/pages/index/index" class="back-link">
+    <text>返回首页</text>
+  </navigator>
+</view>

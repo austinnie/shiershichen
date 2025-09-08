@@ -1,0 +1,55 @@
+<view class="container">
+  <view class="header">
+    <text class="title">指定时间预兆查询</text>
+  </view>
+  
+  <view class="date-type">
+    <radio-group bindchange="changeDateType">
+      <label><radio value="solar" checked/>公历日期</label>
+      <label><radio value="lunar"/>农历日期</label>
+    </radio-group>
+  </view>
+  
+  <picker mode="date" fields="year" bindchange="changeYear">
+    <view class="picker">选择年份: {{selectedYear}}</view>
+  </picker>
+  
+  <picker mode="date" fields="month" bindchange="changeMonth">
+    <view class="picker">选择月份: {{selectedMonth}}</view>
+  </picker>
+  
+  <picker mode="date" fields="day" bindchange="changeDay">
+    <view class="picker">选择日期: {{selectedDay}}</view>
+  </picker>
+  
+  <picker mode="time" bindchange="changeHour">
+    <view class="picker">选择时间: {{selectedHour}}</view>
+  </picker>
+  
+  <picker mode="selector" range="{{omenTypes}}" range-key="name" bindchange="selectOmenType">
+    <view class="picker">选择预兆类型: {{selectedOmenType}}</view>
+  </picker>
+  
+  <view wx:if="{{showSidePicker}}">
+    <picker mode="selector" range="{{['左', '右']}}" bindchange="selectSide">
+      <view class="picker">选择侧别: {{selectedSide}}</view>
+    </picker>
+  </view>
+  
+  <view wx:if="{{showGenderPicker}}">
+    <picker mode="selector" range="{{['男', '女']}}" bindchange="selectGender">
+      <view class="picker">选择性别: {{selectedGender}}</view>
+    </picker>
+  </view>
+  
+  <button bindtap="queryOmen" type="primary">查询预兆</button>
+  
+  <view wx:if="{{omenResult}}" class="result">
+    <text class="result-title">预兆解释</text>
+    <text class="result-content">{{omenResult}}</text>
+  </view>
+  
+  <navigator url="/pages/index/index" class="back-link">
+    <text>返回首页</text>
+  </navigator>
+</view>

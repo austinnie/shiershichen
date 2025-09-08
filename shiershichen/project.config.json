@@ -1,0 +1,56 @@
+{
+    "description": "项目配置文件",
+    "setting": {
+        "urlCheck": true,
+        "es6": true,
+        "postcss": true,
+        "minified": true,
+        "newFeature": true,
+        "compileWorklet": false,
+        "uglifyFileName": false,
+        "uploadWithSourceMap": true,
+        "enhance": false,
+        "packNpmManually": false,
+        "packNpmRelationList": [],
+        "minifyWXSS": true,
+        "minifyWXML": true,
+        "localPlugins": false,
+        "disableUseStrict": false,
+        "useCompilerPlugins": false,
+        "condition": true,
+        "swc": false,
+        "disableSWC": true,
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        }
+    },
+    "compileType": "miniprogram",
+    "libVersion": "2.15.0",
+    "appid": "wx86b32b1a487963c7",
+    "projectname": "shiershichen",
+    "condition": {
+        "searchCondition": {
+            "current": -1,
+            "list": []
+        },
+        "conversationCondition": {
+            "current": -1,
+            "list": []
+        },
+        "miniprogram": {
+            "current": -1,
+            "list": []
+        }
+    },
+    "simulatorPluginLibVersion": {
+        "wxext14566970e7e9f62": "3.6.5-39"
+    },
+    "packOptions": {
+        "ignore": [],
+        "include": []
+    },
+    "editorSetting": {},
+    "projectArchitecture": "multiPlatform"
+}
