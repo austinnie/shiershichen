@@ -1,15 +1,15 @@
 <view class="container">
   <view class="header">
-    <text class="title">十二时辰临身预兆查询系统</text>
+    <text class="title">十二时辰临身信号查询系统</text>
   </view>
   
   <view class="menu">
     <navigator url="/pages/current/current" class="menu-item" hover-class="none">
-      <text>查询当前时间的预兆</text>
+      <text>查询当前时间的临身信号</text>
     </navigator>
     
     <navigator url="/pages/custom/custom" class="menu-item" hover-class="none">
-      <text>查询指定时间的预兆</text>
+      <text>查询指定时间的临身信号</text>
     </navigator>
   </view>
   

@@ -27,7 +27,7 @@
   </picker>
   
   <picker mode="selector" range="{{omenTypes}}" range-key="name" bindchange="selectOmenType">
-    <view class="picker">选择预兆类型: {{selectedOmenType}}</view>
+    <view class="picker">选择临身信号类型: {{selectedOmenType}}</view>
   </picker>
   
   <view wx:if="{{showSidePicker}}">
@@ -42,10 +42,10 @@
     </picker>
   </view>
   
-  <button bindtap="queryOmen" type="primary">查询预兆</button>
+  <button bindtap="queryOmen" type="primary">查询临身信号</button>
   
   <view wx:if="{{omenResult}}" class="result">
-    <text class="result-title">预兆解释</text>
+    <text class="result-title">临身信号解释</text>
     <text class="result-content">{{omenResult}}</text>
   </view>
   

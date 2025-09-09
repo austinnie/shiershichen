@@ -53,7 +53,7 @@ Page({
     
     this.setData({
       selectedOmenType: omenType,
-      showSidePicker: ['占眼跳法', '占眼润法', '占耳鸣法', '占耳痒法', '占踢足法','占眉痒法','占手心痒法'].includes(omenType),
+      showSidePicker: ['占眼跳法', '占眼润法', '占耳鸣法', '占耳痒法', '占手心痒法','占踢足法','占眉痒法'].includes(omenType),
       showGenderPicker: omenType === '占衣留法'
     });
   },

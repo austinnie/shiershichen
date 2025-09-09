@@ -9,7 +9,7 @@ set KEYSTORE="%BASEDIR%\%APK_NAME%\certificate\android.keystore"
 set WORKDIR="%BASEDIR%\%APK_NAME%\release"
 
 
-%JAVA_HOME%\bin\jarsigner.exe -verbose -keystore %KEYSTORE% -storepass 123456 -keypass 123456 -signedjar %WORKDIR%\%APK_NAME%-signed.apk %WORKDIR%\com.tencent.weauth-0.0.1.apk.aligned android
+%JAVA_HOME%\bin\jarsigner.exe -verbose -keystore %KEYSTORE% -storepass 123456 -keypass 123456 -signedjar %WORKDIR%\%APK_NAME%-signed.apk %WORKDIR%\com.tencent.weauth-0.0.2.apk.aligned android
 
 echo "Finish sign APK: %WORKDIR%\%APK_NAME%-signed.apk"
 

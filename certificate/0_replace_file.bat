@@ -6,7 +6,7 @@ set "APK_NAME=shiershichen"
 set "BASEDIR=C:\Users\onsite-235\WeChatProjects"
 set "WORKDIR=%BASEDIR%\%APK_NAME%\release"
 set "README_FILE=%BASEDIR%\%APK_NAME%\certificate\README.md"
-set "PRE_APK=%WORKDIR%\com.tencent.weauth-0.0.1.apk.aligned"
+set "PRE_APK=%WORKDIR%\com.tencent.weauth-0.0.2.apk.aligned"
 
 :: ===== 初始化检查 =====
 echo [INIT] 验证工作目录...
